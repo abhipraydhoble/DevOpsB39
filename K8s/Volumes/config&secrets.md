@@ -1,7 +1,8 @@
 
 ```yaml
+
 apiVersion: v1
-kind: ConfigMap
+kind: ConfigMap # Used to store non sensitive info like username,url etc
 metadata:
   name: my-vars
 data:
@@ -14,7 +15,7 @@ data:
 
 
 apiVersion: v1
-kind: Secret
+kind: Secret  # used to store sensitive info like password,token etc
 metadata:
   name: db-secret
 data:
