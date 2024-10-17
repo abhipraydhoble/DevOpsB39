@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "./modules/vpc"
+    source = "./vpc"
     vpc_cidr_block = var.vpc_cidr_block
     aws_subnet = var.aws_subnet
     az = var.az
@@ -14,7 +14,7 @@ module "vpc" {
 
 
 module "ec2" {
-    source = "./modules/ec2"
+    source = "./ec2"
     ami_id = var.ami_id
     instance_type = var.instance_type
     key = var.key
